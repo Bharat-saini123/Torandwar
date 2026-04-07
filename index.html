@@ -157,8 +157,7 @@
       .hero-bg-img {
         position: absolute;
         inset: 0;
-        background: url("./image9.jpg")
-          center/cover no-repeat;
+        background: url("./image9.jpg") center/cover no-repeat;
         opacity: 0.1;
       }
       .smoke-container {
@@ -1516,6 +1515,57 @@
             0 0 0 8px rgba(255, 149, 0, 0.08);
         }
       }
+
+      .insta-fab {
+        position: fixed;
+        bottom: 9rem;
+        right: 1.5rem;
+        z-index: 200;
+        width: 52px;
+        height: 52px;
+        background: linear-gradient(
+          135deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        box-shadow: 0 6px 25px rgba(220, 39, 67, 0.4);
+        text-decoration: none;
+        transition: transform 0.3s;
+        animation: pulseFabI 3s ease-in-out 0.8s infinite;
+      }
+      .insta-fab:hover {
+        transform: scale(1.1);
+      }
+      @keyframes pulseFabI {
+        0%,
+        100% {
+          box-shadow: 0 6px 25px rgba(220, 39, 67, 0.4);
+        }
+        50% {
+          box-shadow:
+            0 6px 40px rgba(220, 39, 67, 0.7),
+            0 0 0 8px rgba(220, 39, 67, 0.08);
+        }
+      }
+
+      .footer-owner {
+        font-size: 0.78rem;
+        color: rgba(245, 232, 192, 0.35);
+        margin-bottom: 0.6rem;
+        font-style: italic;
+      }
+      .footer-owner strong {
+        color: var(--gold-pale);
+        font-style: normal;
+      }
     </style>
   </head>
   <body>
@@ -1532,6 +1582,13 @@
         <li><a href="#video-reviews">Video Reviews</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/torandwar_itrawala/"
+            target="_blank"
+            >📸 Instagram</a
+          >
+        </li>
       </ul>
     </nav>
 
@@ -1693,11 +1750,11 @@
               <div class="product-img-overlay"></div>
             </div>
             <div class="product-info">
-              <div class="product-type">Arabic Attar</div>
-              <div class="product-name">Oud Al Arabia</div>
+              <div class="product-type">Desi Itr</div>
+              <div class="product-name">Desi Mitti</div>
               <div class="product-desc">
-                Pure oud wood essence from the Arabian Peninsula. Warm, deep and
-                long-lasting.
+                Mitti ki sondhi khushboo – baarish ke baad ki taazgi ko apne
+                andar samete hua. Pure desi attar.
               </div>
             </div>
           </div>
@@ -1707,11 +1764,11 @@
               <div class="product-img-overlay"></div>
             </div>
             <div class="product-info">
-              <div class="product-type">Desi Itr</div>
-              <div class="product-name">Gulab Attar</div>
+              <div class="product-type">Floral Attar</div>
+              <div class="product-name">Vrindavan</div>
               <div class="product-desc">
-                Fresh rose petals captured in pure oil. Traditional and timeless
-                fragrance.
+                Vrindavan ki pavitra khushboo – phoolon aur bhakti se bhari,
+                mann ko shaant karne wali.
               </div>
             </div>
           </div>
@@ -1721,11 +1778,11 @@
               <div class="product-img-overlay"></div>
             </div>
             <div class="product-info">
-              <div class="product-type">Premium Itr</div>
-              <div class="product-name">Musk-e-Abyad</div>
+              <div class="product-type">Special Itr</div>
+              <div class="product-name">Shyam Kripa</div>
               <div class="product-desc">
-                White musk – clean, powdery and ethereal. Perfect for daily
-                wear.
+                Baba Shyam ka aashirwaad – yeh itr unke darbar ki yaad dilata
+                hai. Pavitra aur sundar.
               </div>
             </div>
           </div>
@@ -1735,11 +1792,11 @@
               <div class="product-img-overlay"></div>
             </div>
             <div class="product-info">
-              <div class="product-type">Night Blend</div>
-              <div class="product-name">Amber Noir</div>
+              <div class="product-type">Arabic Blend</div>
+              <div class="product-name">Khatu Naresh</div>
               <div class="product-desc">
-                Rich amber infused with dark spices. A signature evening
-                fragrance.
+                Khatu dham ki tarah gehri aur tiktaki khushboo. Arabik amber ka
+                anokha sangam.
               </div>
             </div>
           </div>
@@ -1749,11 +1806,11 @@
               <div class="product-img-overlay"></div>
             </div>
             <div class="product-info">
-              <div class="product-type">Herbal Blend</div>
-              <div class="product-name">Hina Attar</div>
+              <div class="product-type">Gulal Itr</div>
+              <div class="product-name">Shyam Gulal</div>
               <div class="product-desc">
-                Classic henna-based attar beloved across North India for
-                generations.
+                Gulal si rangeen aur meethi khushboo – Holi aur bhajan ki yaad
+                dilane wali.
               </div>
             </div>
           </div>
@@ -1763,10 +1820,11 @@
               <div class="product-img-overlay"></div>
             </div>
             <div class="product-info">
-              <div class="product-type">Special Collection</div>
-              <div class="product-name">Jannat-ul-Firdaus</div>
+              <div class="product-type">Premium Collection</div>
+              <div class="product-name">Bake Bihari</div>
               <div class="product-desc">
-                The legendary paradise scent – floral, mystical and captivating.
+                Banke Bihari ji ko samarpित – meetha, divya aur mann ko bha jane
+                wala itr.
               </div>
             </div>
           </div>
@@ -1816,7 +1874,7 @@
                 loading="lazy"
               ></iframe>
             </div>
-            <div class="baba-video-caption">🙏 खाटू श्याम बाबा भजन</div>
+            <div class="baba-video-caption">🌸 शुद्ध इत्र – बाबा की सेवा</div>
           </div>
           <div class="baba-video-card reveal">
             <div class="vid-wrap">
@@ -1834,11 +1892,12 @@
                 loading="lazy"
               ></iframe>
             </div>
-            <div class="baba-video-caption">🪔 बाबा की आरती</div>
+            <div class="baba-video-caption">🌸 शुद्ध इत्र – बाबा की सेवा</div>
           </div>
           <div class="baba-video-card reveal">
             <div class="vid-wrap">
               <iframe
+                src="https://ea2.s3.amazonaws.com/audio/17755440234202.mp4"
                 src="https://ea2.s3.amazonaws.com/audio/17755440234202.mp4"
                 title="Itr Seva"
                 allow="
@@ -1933,7 +1992,7 @@
             </div>
             <div class="vr-info">
               <div class="vr-stars">★★★★★</div>
-              <div class="vr-reviewer">Rahul Sharma</div>
+              <div class="vr-reviewer">Sunita Devi</div>
               <div class="vr-location">Mahendragarh</div>
               <div class="vr-comment">
                 "Puja ke liye best attar milta hai yahan. Quality ekdum top
@@ -1963,7 +2022,7 @@
               <div class="vr-reviewer">Mohd. Saleem</div>
               <div class="vr-location">Rewari</div>
               <div class="vr-comment">
-                "Oud Al Arabia ek baar lagao – compliment zaroor milenge!"
+                "Shyam Gulal ek baar lagao – compliment zaroor milenge!"
               </div>
               <span class="vr-verified">✓ Verified Customer</span>
             </div>
@@ -2041,7 +2100,7 @@
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
             <div class="review-text">
-              "Yahan ka Oud Al Arabia bilkul asli hai! Maine kaafi jagah se
+              "Yahan ka Shyam Gulal bilkul asli hai! Maine kaafi jagah se
               kharida lekin तोरणद्वार ItraWala ka itr sab se zyada tiktaka aur
               gehri khushboo wala hai!"
             </div>
@@ -2073,7 +2132,7 @@
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
             <div class="review-text">
-              "Jannat-ul-Firdaus ki khushboo kamaal ki hai! Pure attar milta hai
+              "Shyam Kripa ki khushboo kamaal ki hai! Pure attar milta hai
               yahan, koi milawat nahi. Best itr shop in Narnaul!"
             </div>
             <div class="review-author">
@@ -2088,7 +2147,7 @@
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
             <div class="review-text">
-              "Musk-e-Abyad bohot hi achha hai – light aur fresh rehta hai din
+              "Khatu Naresh bohot hi achha hai – light aur fresh rehta hai din
               bhar. Ye dukaan bahut purani aur bharosemand hai."
             </div>
             <div class="review-author">
@@ -2103,7 +2162,7 @@
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
             <div class="review-text">
-              "Hina attar liya tha, bahut hi traditional aur asli smell hai.
+              "Desi Mitti liya tha, bahut hi traditional aur asli smell hai.
               Gift packing bhi bahut sundar ki. Shukriya तोरणद्वार ItraWala!"
             </div>
             <div class="review-author">
@@ -2118,7 +2177,7 @@
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
             <div class="review-text">
-              "Amber Noir toh zabardast hai – raat ke waqt lagao aur compliments
+              "Vrindavan toh zabardast hai – raat ke waqt lagao aur compliments
               milenge. Bahut achha experience tha dukaan mein."
             </div>
             <div class="review-author">
@@ -2183,16 +2242,35 @@
             <div class="contact-item">
               <div class="contact-item-icon">📞</div>
               <div class="contact-item-text">
-                <h4>Shop Phone</h4>
-                <a href="tel:+919802030020">098020 30020</a>
+                <h4>Phone / Order</h4>
+                <a
+                  href="tel:+919614148000"
+                  style="
+                    color: var(--saffron);
+                    font-size: 1.1rem;
+                    font-style: normal;
+                    font-weight: 600;
+                  "
+                  >9614148000</a
+                >
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-item-icon">📦</div>
+              <div class="contact-item-icon">👤</div>
               <div class="contact-item-text">
-                <h4>Order Phone</h4>
-                <a href="tel:+919614148000" style="color: var(--saffron)"
-                  >9614148000</a
+                <h4>Owner</h4>
+                <p>Rajneesh Saini</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📸</div>
+              <div class="contact-item-text">
+                <h4>Instagram</h4>
+                <a
+                  href="https://www.instagram.com/torandwar_itrawala/"
+                  target="_blank"
+                  style="color: var(--gold); font-style: normal"
+                  >@torandwar_itrawala</a
                 >
               </div>
             </div>
@@ -2260,16 +2338,30 @@
       <div class="footer-logo">तोरणद्वार ItraWala</div>
       <div class="footer-tagline">खुशबू जो खबर दे बाबा के आने की 🙏</div>
       <div class="footer-sub">तोरणद्वार इत्रवाला · Narnaul, Haryana</div>
+      <div class="footer-owner">
+        Owner: <strong>Rajneesh Saini</strong> &nbsp;·&nbsp;
+        <a
+          href="https://www.instagram.com/torandwar_itrawala/"
+          target="_blank"
+          style="color: var(--gold); text-decoration: none"
+          >📸 @torandwar_itrawala</a
+        >
+      </div>
       <div class="footer-divider"></div>
       <div class="footer-copy">
-        Opposite Polytechnic, Seka, Narnaul – 123001 &nbsp;·&nbsp; Shop: 098020
-        30020 &nbsp;·&nbsp; Order: 9614148000 &nbsp;·&nbsp; Open 9 AM – 9 PM,
-        Mon–Sun
+        Opposite Polytechnic, Seka, Narnaul – 123001 &nbsp;·&nbsp; Contact:
+        9614148000 &nbsp;·&nbsp; Open 9 AM – 9 PM, Mon–Sun
       </div>
     </footer>
 
-    <a href="tel:+919802030020" class="phone-fab" title="Call Shop">📞</a>
-    <a href="tel:+919614148000" class="order-fab" title="Order Now">📦</a>
+    <a
+      href="https://www.instagram.com/torandwar_itrawala/"
+      target="_blank"
+      class="insta-fab"
+      title="Instagram"
+      >📸</a
+    >
+    <a href="tel:+919614148000" class="phone-fab" title="Call">📞</a>
 
     <script>
       const cursor = document.getElementById("cursor"),
